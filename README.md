@@ -1,4 +1,4 @@
-Self-written copy of lodash
+# Self-written copy of lodash
 
 ```
 npm run build
