@@ -1,5 +1,6 @@
-import lodashing from './Lodashing'
-import _ from 'lodash'
+import { lodashing } from 'Lodashing';
+import * as lodashing from './components/Array';
+import * as _ from 'lodash'
 
 
 // console.log(lodashing.chunk(['a', 'b', 'c', 'd'], 2), _.chunk(['a', 'b', 'c', 'd'], 2))
@@ -8,6 +9,7 @@ import _ from 'lodash'
 // console.log(lodashing.difference([2.1, 1.2], [2.3, 3.4]), _.difference([2.1, 1.2], [2.3, 3.4]))
 // console.log(lodashing.differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor), _.differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor))
 
-// console.log(lodashing.isArray([1]), _.isArray([1]))
+console.log(isArray([1]))
+console.log(_.isArray([1]))
 // console.log(lodashing.castArray(1), _.castArray(1))
-console.log(lodashing.clone([{ 'a': 1 }, { 'b': 2 }]), _.clone([{ 'a': 1 }, { 'b': 2 }]))
+// console.log(lodashing.clone([{ 'a': 1 }, { 'b': 2 }]), _.clone([{ 'a': 1 }, { 'b': 2 }]))
