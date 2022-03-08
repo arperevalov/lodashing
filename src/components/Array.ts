@@ -1,4 +1,4 @@
-import { isArray } from "./Lang"
+import { isArray } from "./Lang.js"
 
 export function chunk (arr: any[], parameter: number) {
     let newArr = [],
