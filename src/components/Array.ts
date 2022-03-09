@@ -1,4 +1,6 @@
-export function chunk (arr, parameter) {
+import { isArray } from "./Lang.js"
+
+export function chunk (arr: any[], parameter: number) {
     let newArr = [],
     index = 0
     while (index < Math.ceil(arr.length/parameter)) {
@@ -8,7 +10,7 @@ export function chunk (arr, parameter) {
     return newArr
 }
 
-export function compact (arr) {
+export function compact (arr: any[]) {
     let newArr = [],
     index = 0
 
@@ -44,7 +46,7 @@ export function concat () {
 }
 // console.log('concat', concat([52], 3, [55], [[4]]))
 
-export function difference (arr1, arr2) {
+export function difference (arr1: any[], arr2: any[]) {
     let length = arr1.length,
     index = 0,
     newArr = []
@@ -58,7 +60,7 @@ export function difference (arr1, arr2) {
 }
 // console.log('difference', difference([2, 1], [2, 3]))
 
-export function differenceBy (arr1, arr2, differ) {
+export function differenceBy (arr1: any[], arr2: any[], differ: any) {
     let length = arr1.length,
     index = 0,
     length1 = arr2.length,
